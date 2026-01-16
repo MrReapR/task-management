@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <main class="main">
+      <h1>Task Dashboard</h1>
+
+      <!-- Calendar -->
+      <div class="calendar-container">
+        <div id="calendar" class="calendar"></div>
+      </div>
+
+      <!-- Users & Tasks -->
+      <div id="content" class="user-tasks"></div>
+
+      <!-- Add user & task -->
+      <div class="add-section">
+        <h3>Add User</h3>
+        <input id="firstName" placeholder="First Name">
+        <input id="lastName" placeholder="Last Name">
+        <select id="section"></select>
+        <button onclick="addUser()">Add User</button>
+
+        <h3>Add Task</h3>
+        <select id="taskUser"></select>
+        <input id="taskTitle" placeholder="Task Title">
+        <input type="date" id="taskDate">
+        <button onclick="addTask()">Add Task</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

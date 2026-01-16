@@ -1,0 +1,30 @@
+body { margin:0; font-family: "Segoe UI",sans-serif; background:#f4f6f8; color:#333; }
+h1 { text-align:center; margin-bottom:20px; }
+
+.calendar-container { width:300px; margin:0 auto 20px auto; }
+.calendar {
+  background:#fff; padding:10px; border-radius:10px; text-align:center;
+  box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+.calendar .day { display:inline-block; width:32px; height:32px; line-height:32px; margin:2px; border-radius:50%; cursor:pointer; background:#eee; }
+.calendar .today { background:#22c55e; color:#fff; }
+.calendar .task-deadline { background:orange; color:#fff; }
+.calendar .task-done { background:#22c55e; color:#fff; }
+.calendar .selected-date { border:2px solid #6366f1; }
+
+.user-tasks { width:90%; max-width:800px; margin:0 auto 20px auto; }
+.card { background:#fff; padding:15px; border-radius:12px; margin-bottom:15px; box-shadow:0 0 5px rgba(0,0,0,0.05); }
+.task { display:flex; justify-content:space-between; align-items:center; padding:8px; border-radius:6px; margin-top:5px; position:relative; }
+.task.pending { border-left:5px solid orange; }
+.task.in-progress { border-left:5px solid blue; }
+.task.done { border-left:5px solid green; }
+.task.overdue { border-left:5px solid red; }
+.task .tooltip { display:none; position:absolute; top:-25px; right:10px; background:#333; color:#fff; padding:2px 6px; font-size:12px; border-radius:4px; }
+.task:hover .tooltip { display:block; }
+
+.progress { background:#e5e7eb; height:8px; border-radius:4px; overflow:hidden; margin:5px 0; }
+.progress-fill { background:#22c55e; height:100%; }
+
+.add-section { width:90%; max-width:800px; margin:0 auto; padding:10px; background:#fff; border-radius:10px; box-shadow:0 0 5px rgba(0,0,0,0.05); }
+.add-section input, .add-section select, .add-section button { margin:5px 5px 10px 0; padding:5px 8px; border-radius:6px; border:1px solid #ccc; }
+.add-section button { background:#22c55e; color:white; border:none; cursor:pointer; }
